@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/road_dam.jpeg") no-repeat center center/cover;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 0;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    width: 360px;
+    padding: 45px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: #ffcc00;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    color: white;
+}
+
+.input-box label {
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    color: #aaa;
+    font-size: 13px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-box input:focus + label,
+.input-box input:valid + label {
+    top: -8px;
+    left: 12px;
+    background: black;
+    padding: 0 5px;
+    font-size: 11px;
+    color: #ffcc00;
+}
+
+.input-box input:focus {
+    border-color: #ffcc00;
+    box-shadow: 0 0 10px #ffcc00;
+}
+
+.password-box {
+    position: relative;
+}
+
+.toggle {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #ffcc00, #ffaa00);
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffcc00;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: linear-gradient(45deg, #ff4d4d, #cc0000);
+    color: white !important;
+    padding: 12px 22px;
+    border-radius: 30px;
+    text-decoration: none !important;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(255,0,0,0.5);
+    border: none;
+}
+
+.back-btn:visited {
+    color: white !important;
+}
+
+.back-btn:hover {
+    background: #cc0000;
+    color: white !important;
+}
+.error {
+    color: red;
+    margin-bottom: 10px;
+    text-align: center;
+}
