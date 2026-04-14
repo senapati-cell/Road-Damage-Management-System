@@ -90,8 +90,7 @@ Road_Damage_Management_System
 ## 👨‍💻 Author
 
 **Biswajit Senapati**
-🎓 B.Tech (Electrical Engineering)
-📌 Aspiring Software Developer
+🎓 B.Tech (Computer Science and Engineering)
 
 ---
 
